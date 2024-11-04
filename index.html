@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<body>
+    <div id="body">
+    <div class = "container">
+        
+    <p >SignIn to your Account</p>
+
+    <span style="align-content: left;">Email</span>
+    
+    <input type="email" id="in1"  placeholder="name@example.com" required></input>
+    
+    <span >Password</span>
+    <input id="in2" type="password" placeholder="Password"></input>
+
+    <button class= "button"onclick="ButtonClick()">
+        Sign Up
+    </button>
+</div>
+</div>
+</body>
+<script>
+    async function ButtonClick(){
+   const username = document.getElementById("in1").value;
+   const password = document.getElementById("in2").value;
+
+   const arr = [];
+
+   if(username == "" || password == ""){
+       alert("enter username or password!");
+       return;
+   }else{
+
+   
+   
+   const data = await axios.post("http://localhost:3001/signup", 
+   {
+       username: username,
+       password: password
+   })
+
+   const ans = JSON.stringify(data.data.message);
+   alert(ans);
+}}
+</script>
+
+
+</html>

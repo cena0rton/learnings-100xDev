@@ -1,0 +1,83 @@
+.container{
+ 
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 40px 60px;
+  margin: 0;
+  border-color: rgba(248, 241, 232, 0.281);
+  border-style: solid;
+  border-width: 0.15px;
+}
+body{
+    margin: 0;
+    background-color: rgb(22, 22, 22);
+}
+p{
+    color: white;
+    font-size:24px;
+    text-align:left;
+    font-family: lexend;
+    margin: 0;
+    margin-bottom: 30px;
+}
+span{
+    font-family: lexend;
+    padding-left: 0px;
+    font-weight: 300;
+    padding-bottom: 2px;
+}
+#body{
+    margin: 0;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    
+    justify-content: center;
+    padding-top:250px;
+    padding-bottom: 200px;
+}
+
+#in1, #in2{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 400px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(114, 114, 114, 0.376);
+    color: white;
+}
+
+#in2{
+    color: white;
+}
+.button{
+    height: 40px;
+    width: 428px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    background-color: rgb(13, 83, 236);
+    cursor: pointer;
+    border: none;
+    color: rgb(238, 238, 238);
+    font-family: lexend;
+    
+}
+.button:active{
+    background-color: rgb(6, 50, 143);
+    transition: 0.15s;
+}
+
+#in2,#in1::placeholder{
+    color: rgba(255, 255, 255, 0.342);
+    font-family: lexend;
+}
