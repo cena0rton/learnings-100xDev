@@ -1,0 +1,145 @@
+body{
+    background-color: #0e0e0e;
+    font-family: arial;
+    color: white;
+    margin:0;
+    padding-top: 20px ;
+}
+
+.vscR{
+    display: flex;
+        align-items: center;
+        padding-left: 200px;
+}
+
+.vscL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+}
+.inputbar{
+    
+    background-color: #0e0e0e;
+    padding: 8px 16px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: gray;
+    margin-right: 10px ;
+    color:white;
+
+}
+.inputbar::placeholder{
+ color:#9ba3b4;
+ letter-spacing: 0.5px;
+}
+
+.inputbar:active{
+    border: none;
+    border-color: black;
+
+}
+input[type="text"] {
+    border: none ;       
+    /* box-shadow: none !important;     
+    outline: none !important;         */
+    background: transparent;    
+    outline: none;
+    border:none;     
+    color: #9ba3b4;
+
+  }
+ 
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.header{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    height:20px;
+    background-color: #0e0e0e;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);;
+    
+    border-bottom-color: rgb(17, 17, 17);
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-style: solid;
+    border-bottom-width: 0.5px;
+    margin-top:0;
+}
+
+.toplink{
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #9ba3b4;
+}
+
+.downloadbtn{
+     border: none;
+     padding: 12px 20px;
+     border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 4px;
+    background-color: #0078d4 ;
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+    
+}
+
+.cont2{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    max-width: 1256px;
+    margin:0;
+}
+.cont2 p{
+    color:  #9ba3b4;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.divicon{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.icons{
+    height: 40px;
+    padding-right: 10px;
+}
+@media screen and (max-width: 1440px) {
+
+   .vscR{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+   }
+
+   .vscL{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-right: 10px;
+   }
+  }
